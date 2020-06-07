@@ -1,0 +1,124 @@
+https://codepen.io/hankles_/pen/pogJver?editors=1000
+
+    1.  What is Semantic HTML?
+        It's html that has meaning. Specifically, HTML has semantic elements that describe it's purpose. Like the p element, which is defined as a paragraph element to store blocks of text.
+    2.  What is HTML used for?
+        HTML is the foundation of all webpages, without it, all the webpages would basically be a grouped up mess. Without HTML, all elements will be displayed as clustered text and images.
+    3.  What is an attribute and where do we put it?
+        An attribute of an element can provide addtional information to the element. One of the most used attribute "class" which assigns a class name to an HTML element
+    4.  What is the h1 tag used for? How many times should I use it on a page?
+        The h1 element is one of the most important information for the webpage. It's used for SEO (Search Engine Optimization), so a website can be easily searched through a search engine like Google.
+    5.  Name two tags that have required attributes
+        "img" needs a "src" attribute or at least a "alt" attribute to display something.
+        "dialog" needs an "open" attribute to be displayed.
+    6.  What do we put in the head of our HTML document? 
+        Metadata. SEO can look at the head element for meta tags. Other devices can see the metadata for the webpage to scale text and images for the screen size of the device. The head element can also be used to load in CDNs, for CSS libraries/files.
+    7.  What is an id? 
+        An attribute that you can add to any HTML element. The purpose of the ID is intended to be a unique identifier for the selected element.
+    8.  What elements can I add an id to?
+        Any HTML element.
+    9.  How many times can I use the same id on a page?
+        You can add the same id to more than one HTML element, but it is designed for one HTML element to have it's unique id, so only one unique id for one HTML element.
+    10. What is a class?
+        An HTML attribute to group multiple HTML elements with similar styles.
+    11. What elements can I add a class to?
+        Any HTML element.
+    12. How many times can I use the same class on a page?
+        The same class name can be used in multiple HTML elements in any page.
+    13. How do I get my link to open in a new tab?
+        In an "a" element that has an href attribute, you can add the attribute "target" with the value "_blank". [target="_blank"]
+    14. What is the alt attribute in the image tag used for?
+        Incase the source of the image has been corrupted or unreachable for any reason, the alt attribute is a fallback that display text instead of the image. The text should be a description on what image is.
+    15. How do I reference an id?
+        In CSS, typing the following "#idName{}" selects an id. The "#" used for the selection.
+    16. What is the difference between a section and a div
+        Both HTML elements function the same way, though a section element has a semantic meaning for a standalone section for an element that doesn't have other HTML element without a more specific semantic meaning.
+    17. What is CSS used for?
+        CSS is used for styling and webpages. With ids and classes, CSS can be used to create webpages with more options of color, layout structure, text transformation and more.
+    18. How to we select an element? Example - every h2 on the page
+        In CSS, type "h2 {}" and it will select all h2 elements.
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+        Class is a selections of many elements that share the same CSS styles. Id is used for specifically one element so that the element gets to have its own unique style.
+    20. How do we select classes in CSS?
+        ".className" the "." is used to select classes.
+    21. How do we select a p element with a single class of “human””?
+        Type "p.human". You must add the element then the class name with the "." character with it.
+    22. What is a parent child selector? When would this be useful? 
+        Using the ">" character. It's useful if there is a specific element that needs to be selcted in another element. For example, certain "li" elements may have some classes that other "li" elements don't have in a unordered list.
+    23. How do you select all links within a div with the class of sidebar?
+        ".sidebar a {}"
+    24. What is a pseudo selector?
+        It's selector that selects a certain state of an element. Like hovering over an element, focusing the element, and element specific pseudo selectors like checked for checkboxes.
+    25. What do we use the change the spacing between lines?
+        "line-height: value;"
+    26. What do we use to change the spacing between letters?
+        "letter-spacing: value;"
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+        "text-transform: value;"
+    28. How do I add a 1px border around my div that is dotted and black?
+        "border: 1px dotted black;"
+    29. How do I select everything on the page? 
+        "* {}"
+    30. How do I write a comment in CSS?
+        "/**/"
+    31. How do I find out what file I am in, when I am using the command line? 
+        ////////////////////////
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+        "ls"
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+        "rm filename". Everyone needs to be careful since there is no feedback when the action is done. As soon as ENTER key has been pressed, the command executes in an instant. If given the proper privleges, there is a possibility that an entire PC can be wiped of its data with the "rm" command.
+    34. Why should I use version control? 
+        It's a very useful way to keep track of a projects history with version control. If a bug has been introduced in the more recent versions of project, version control can rewind to a version that didn't have the issue and troubleshoot and debug the current versions.
+    35. How often should I commit to github?
+        As often as one can. The frequent the changes the better. Incase if there is an issue in one of the commits, you can pin point which commit caused the problem. As for commiting large commits in longer period of time, it can be difficult to what commit and where in each commit that the problem could have been caused.
+    36. What is the command we would use to push our repo up to github? 
+        "git push" or "git push -set--upstream branch-name"
+    37. Walk me through Lambda's git flow. 
+        1. Fork the project on GitHub
+        2. Clone the project on your local computer.
+        3. "cd" in the project's directory
+        4. create a branch with the "git checkout" command.
+        5. With any text editor, work on the project as needed like debugging, implementaions, createing code, etc.
+        6. When all coding is done, save all changes with the "git add ." to stage the changes for a commit.
+        7. Check to see if the changes are staged with the "git status" command.
+        8. Commit the changes for the project with the "git commit -m 'Test Message'"
+        9. "git status" again to see if all changes have been commited.
+        10. To push the commited on changes from the local machine to a GitHub repo, use the "git push" command to push all the changes. If a push needs to set on a specific branch, then "git push --set-upstream branch-name" is the command.
+        11. After the changes were pushed to the forked repo's branch, a pull-request can be made to merge the commited code from the branch to the orginal repo.
+        12. Upon requesting, the owner of the orginal repo, or other reviewers, have to review the code if it is viable to merge the commited code the original source code.
+        13. If the pull-request is accepeted, all the commited changes will be merged to the original source code.
+
+        Repeat the process from step 4 to 13 incase for future implementaions for the same repository.
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+        Block elements always start in a new line in html page and take use all the width of the webpage available. Where an inline element doesn't take a up new line and only uses width that it needs to display it's content.
+    2. What happens when an element is positioned absolutely? 
+        Absolute positioning can move an element relative to it's closest ancestor element that doesn't have a position of "static".
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+        Using the CSS property "width". Eg. "width: 100px;"
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+        Block elements
+            1. h1
+            2. p
+            3. div
+        Inline elements
+            1. strong
+            2. span
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them?
+        Every html element uses the box model. The box model consists of 4 boxes named the margin, border, padding, and content.
+        Margin is the box when givin a value can add spacing between other element.
+        The border box is the container of all the content of the element.
+        Padding is the box when given a value can add spacing to the content box from the border box.
+        Content is the amount of space that is used up by text, images, and/or other elements.
+
+        The fix for the box model is the code below.
+        "
+            html {
+                box-sizing: border-box;
+            }
+        "
+        By default the box sizing for each element is only for the content (content-box) of the html element, it does not include the border and the padding box sizes.
+        However, with the border-box property, the border and the padding box sizes are included with the content box.
+        This fix is useful for aligning elements with different sized borders since without it, the elements would be misaligned.
