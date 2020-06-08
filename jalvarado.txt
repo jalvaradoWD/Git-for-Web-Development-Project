@@ -62,7 +62,7 @@ https://codepen.io/hankles_/pen/pogJver?editors=1000
     30. How do I write a comment in CSS?
         "/**/"
     31. How do I find out what file I am in, when I am using the command line? 
-        ////////////////////////
+        In the terminal, the current directory is already displayed usually with the name of the current directory the user is currently in. Also, you can use the "pwd" command to print out the the current working directory.
     32. Using the command line - how do I see a list of files/folders in my current folder?
         "ls"
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
